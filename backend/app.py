@@ -5,7 +5,9 @@ import sqlite3
 import os
 
 app = Flask(__name__)
-CORS(app)
+# Explicit CORS configuration for API routes to ensure Access-Control-Allow-Origin is returned
+# This allows requests from any origin; in production, restrict `origins` to your frontend domain(s).
+CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 DATABASE = 'hardware_management.db'
 
