@@ -3,7 +3,8 @@ import './ProductTable.css';
 
 function ProductTable({ products, onDelete }) {
   return (
-    <table className="products-table">
+    <div className="table-wrapper">
+      <table className="products-table">
       <thead>
         <tr>
           <th>ID</th>
@@ -51,7 +52,8 @@ function ProductTable({ products, onDelete }) {
           </tr>
         ))}
       </tbody>
-    </table>
+      </table>
+    </div>
   );
 }
 

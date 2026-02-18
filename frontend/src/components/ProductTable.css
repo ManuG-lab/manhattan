@@ -8,3 +8,21 @@
   font-weight: bold;
   text-decoration: line-through;
 }
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Make table more compact on small screens */
+@media (max-width: 768px) {
+  .products-table th,
+  .products-table td {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .products-table thead {
+    display: table-header-group; /* keep header but smaller */
+  }
+}

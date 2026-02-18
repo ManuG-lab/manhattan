@@ -43,6 +43,38 @@
   gap: 1rem;
 }
 
+@media (max-width: 768px) {
+  .page-container {
+    padding: 1rem;
+  }
+
+  .filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .products-table {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-table th {
+    display: none; /* hide header on very small screens to save space */
+  }
+
+  .products-table td {
+    display: block;
+  }
+}
+
 .btn {
   padding: 0.75rem 1.5rem;
   border: none;

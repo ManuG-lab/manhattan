@@ -33,6 +33,7 @@
   padding: 0;
   flex: 1;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .nav-item {
@@ -87,5 +88,16 @@
 
   .user-info {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-menu {
+    gap: 0.6rem;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
   }
 }
