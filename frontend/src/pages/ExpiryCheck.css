@@ -1,0 +1,129 @@
+.expiry-filter {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expiry-filter label {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.expiry-filter .filter-input {
+  padding: 0.5rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+}
+
+.expiry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.expiry-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #95a5a6;
+  transition: transform 0.3s ease;
+}
+
+.expiry-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.expiry-card.urgent {
+  border-left-color: #e74c3c;
+  background-color: #fadbd8;
+}
+
+.expiry-card.urgent h3 {
+  color: #c0392b;
+}
+
+.expiry-card.warning {
+  border-left-color: #f39c12;
+  background-color: #fef5e7;
+}
+
+.expiry-card.warning h3 {
+  color: #d68910;
+}
+
+.expiry-card.expired {
+  border-left-color: #8b0000;
+  background-color: #fadbd8;
+}
+
+.expiry-card.expired h3 {
+  color: #8b0000;
+}
+
+.expiry-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.product-size {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  margin: 0 0 0.3rem 0;
+}
+
+.product-category {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  margin: 0 0 0.3rem 0;
+}
+
+.product-price {
+  color: #27ae60;
+  font-weight: 500;
+  margin: 0.3rem 0;
+}
+
+.product-stock {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  margin: 0.3rem 0;
+}
+
+.expiry-info {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ecf0f1;
+}
+
+.expired-label {
+  font-weight: bold;
+  color: #8b0000;
+  font-size: 1rem;
+}
+
+.days-left {
+  font-weight: bold;
+  color: #e74c3c;
+  font-size: 1rem;
+}
+
+.expiry-date-text {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+}
+
+.no-data {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #7f8c8d;
+}
