@@ -2,6 +2,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": "build",
   "env": {
-    "REACT_APP_API_URL": "https://hardware-management-backend.onrender.com/api"
+    "REACT_APP_API_URL": "https://manhattan-ko05.onrender.com/api"
   }
 }
